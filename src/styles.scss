@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "@angular/material" as mat;
+@include mat.core();
+
+$myapp-theme-primary: mat.define-palette(mat.$indigo-palette, A400, A100, A700);
+$myapp-theme-accent: mat.define-palette(mat.$indigo-palette);
+$myapp-theme-warn: mat.define-palette(mat.$red-palette);
+
+$myapp-theme: mat.define-light-theme((
+  color: (
+    primary: $myapp-theme-primary,
+    accent: $myapp-theme-accent,
+    warn: $myapp-theme-warn,
+  )
+));
+
+@include mat.all-component-themes($myapp-theme);
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
