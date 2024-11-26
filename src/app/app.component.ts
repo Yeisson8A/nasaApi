@@ -6,7 +6,7 @@ import {
   faHardDrive,
   IconDefinition,
 } from '@fortawesome/free-regular-svg-icons';
-import { faEarthEurope } from '@fortawesome/free-solid-svg-icons';
+import { faEarthEurope, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +19,5 @@ export class AppComponent {
   faCalendar: IconDefinition = faCalendar;
   faHardDrive: IconDefinition = faHardDrive;
   faEarthEurope: IconDefinition = faEarthEurope;
+  faRobot: IconDefinition = faRobot;
 }
